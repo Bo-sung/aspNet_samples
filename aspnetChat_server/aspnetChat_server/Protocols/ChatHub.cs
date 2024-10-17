@@ -1,13 +1,13 @@
 ﻿using aspnetChat_server.DB;
 using Microsoft.AspNetCore.SignalR;
 using Newtonsoft.Json;
-using System.Reflection.Metadata;
-using static aspnetChat_server.Protocols.Protocol.Chat;
+using aspnetChat_server.Protocols.Chat;
 
 namespace aspnetChat_server.Protocols
 {
     public class ChatHub : Hub
     {
+        public static string URL_HEADER = "/chatHub";
         /// <summary>
         /// 모든 메시지 가져오기
         /// </summary>
@@ -36,36 +36,24 @@ namespace aspnetChat_server.Protocols
         /// <param name="message">메시지</param>
         public async Task SendMessage(string param)
         {
-            var temp = JsonConvert.DeserializeObject<Protocol.Chat.ClientSide.SendMessage.Param>(param);
+            var temp = Protocol.DeserializeParam(param);
+            //var temp = JsonConvert.DeserializeObject<Protocol2.Param>(param);
             if (temp == null)
                 return;
+            // 파라미터 1번 있는지 체크
+            if (temp.param1 == null)
+                return;
+            // 파라미터 1번이 ChatMessage인지 체크
+            if (temp.param1?.type != typeof(ChatMessage))
+                return;
+            ChatMessage messageStruct = (ChatMessage)temp.param1?.value;
 
             // DB에 메시지 추가
-            DBManager.Instance.DBMessage.AddMessage(temp.message.user, temp.message.message);
-            Protocol.Chat.ClientSide.SendMessage.Result temp2 = new Protocol.Chat.ClientSide.SendMessage.Result()
-            {
-                resultCode = RCode.SUCCESS,
-                message = temp.message
-            };
+            DBManager.Instance.DBMessage.AddMessage(messageStruct.message, messageStruct.user);
 
-            Protocol2.Param temp3 = new Protocol2.Param()
-            {
-                resultCode = RCode.SUCCESS,
-                param1 = new Protocol2.ParamStruct()
-                {
-                    type = temp.message.GetType(),
-                    value = temp.message
-                }
-            };
-
+            // 받은 파라미터 그대로 전달. (위에서 검증했으니까 그대로 보내도 될듯?)
             // 모든 클라이언트에게 메시지 전송
-            await Protocol2.RelayMessages.SendAll(Clients, temp2);
-
-            //// 모든 클라이언트에게 메시지 전송
-            //await Clients.All.SendAsync(
-            //    Protocol.Chat.ClientSide.SendMessage.ProtoStr,
-            //    JsonConvert.SerializeObject(temp2));
-
+            await Protocol.RelayMessages.SendAll(Clients, temp);
         }
 
         /// <summary>
@@ -73,29 +61,18 @@ namespace aspnetChat_server.Protocols
         /// </summary>
         public async Task RequestAllMessages()
         {
-            Protocol.Chat.ClientSide.RequestAllMessages.Result temp = new Protocol.Chat.ClientSide.RequestAllMessages.Result()
-            {
-                resultCode = RCode.SUCCESS,
-                messageDic = GetAllMessages()
-            };
-
-
             Dictionary<string, ChatMessage> messageDic = GetAllMessages();
-            Protocol2.Param temp3 = new Protocol2.Param()
+            Protocol.Param param = new Protocol.Param()
             {
                 resultCode = RCode.SUCCESS,
-                param1 = new Protocol2.ParamStruct()
+                param1 = new Protocol.ParamStruct()
                 {
                     type = messageDic.GetType(),
                     value = messageDic
                 }
             };
 
-            await Protocol2.RequestAllMessages.SendCaller(Clients, temp);
-
-            //await Clients.Caller.SendAsync(
-            //    Protocol.Chat.ClientSide.RequestAllMessages.ProtoStr,
-            //    JsonConvert.SerializeObject(temp));
+            await Protocol.RequestAllMessages.SendCaller(Clients, param);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+2LVtEIZm+k=",
+  "dgSpecHash": "3MXDCtUWp4U=",
   "success": true,
-  "projectFilePath": "J:\\Gits\\server\\Sample\\aspnetChat_server\\aspnetChat_server.csproj",
+  "projectFilePath": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\aspnetChat_server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sbss0\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\8.0.8\\microsoft.aspnetcore.connections.abstractions.8.0.8.nupkg.sha512",
     "C:\\Users\\sbss0\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\8.0.8\\microsoft.aspnetcore.http.connections.client.8.0.8.nupkg.sha512",

@@ -1304,19 +1304,19 @@
   },
   "packageFolders": {
     "C:\\Users\\sbss0\\.nuget\\packages\\": {},
-    "H:\\VS2022\\SDK\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\Gits\\server\\Sample\\aspnetChat_server\\aspnetChat_server.csproj",
+      "projectUniqueName": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\aspnetChat_server.csproj",
       "projectName": "aspnetChat_server",
-      "projectPath": "J:\\Gits\\server\\Sample\\aspnetChat_server\\aspnetChat_server.csproj",
+      "projectPath": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\aspnetChat_server.csproj",
       "packagesPath": "C:\\Users\\sbss0\\.nuget\\packages\\",
-      "outputPath": "J:\\Gits\\server\\Sample\\aspnetChat_server\\obj\\",
+      "outputPath": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "H:\\VS2022\\SDK\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\sbss0\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1388,7 +1388,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

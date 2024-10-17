@@ -5,7 +5,7 @@ namespace aspnetChat_server
 {
     public class Program
     {
-        private static WebApplication m_app;
+        private static WebApplication m_app = null;
 
         /// <summary>
         /// 웹 응용 프로그램을 빌드합니다.
@@ -64,7 +64,7 @@ namespace aspnetChat_server
             m_app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<ChatHub>(Protocol.Chat.URL_HEADER);
+                endpoints.MapHub<ChatHub>(ChatHub.URL_HEADER);
             });
 
             // 웹 응용 프로그램 실행

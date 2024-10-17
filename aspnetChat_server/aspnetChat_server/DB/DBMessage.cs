@@ -8,7 +8,7 @@ namespace aspnetChat_server.DB
     {
         public class Element
         {
-            public Protocols.Protocol.Chat.ChatMessage message;
+            public Protocols.Chat.ChatMessage message;
             public DateTime time;
 
             public Element(string user, string message)
