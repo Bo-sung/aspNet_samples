@@ -4,6 +4,16 @@ using System.Text.Json;
 namespace aspnetChat_server.DB
 {
     using DBDicType = Dictionary<string, DBMessage.Element>;
+
+    public class ChatMessage
+    {
+        public DBChatMessage context;
+        public int id { get; set; }
+        public string user { get; set; }
+        public string message { get; set; }
+        public DateTime time { get; set; }
+    }
+
     public class DBMessage
     {
         public class Element

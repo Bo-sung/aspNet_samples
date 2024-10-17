@@ -1,5 +1,7 @@
 
+using aspnetChat_server.DB;
 using aspnetChat_server.Protocols;
+using System.Configuration;
 
 namespace aspnetChat_server
 {
@@ -27,8 +29,20 @@ namespace aspnetChat_server
             builder.Services.AddSwaggerGen();
             // SignalR 추가
             builder.Services.AddSignalR();
+            // 커넥션 스트링 불러오기
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            // MYSQL 서비스 추가
+            builder.Services.Add(new ServiceDescriptor(typeof(DBService), new DBService(connectionString)));
 
             return builder.Build();
+        }
+
+        private static void InitDB(WebApplicationBuilder builder)
+        {
+            // 커넥션 스트링 불러오기
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            // MYSQL 서비스 추가
+            builder.Services.Add(new ServiceDescriptor(typeof(DBChatMessage), new DBChatMessage(connectionString)));
         }
 
         public static void Main(string[] args)
