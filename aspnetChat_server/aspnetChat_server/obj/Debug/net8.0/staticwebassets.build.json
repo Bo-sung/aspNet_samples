@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YmUI8JpwP1HQyPpg4yoZuI/8MlVQT4BoSVdxUl+eSK0=",
+  "Source": "aspnetChat_server",
+  "BasePath": "_content/aspnetChat_server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
