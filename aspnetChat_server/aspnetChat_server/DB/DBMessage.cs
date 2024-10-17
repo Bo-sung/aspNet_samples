@@ -30,6 +30,10 @@ namespace aspnetChat_server.DB
 
         public DBDicType Dic_Messages { get => _dic_Messages; }
 
+        /// <summary>
+        /// 모든 메시지 가져오기
+        /// </summary>
+        /// <returns></returns>
         public DBDicType GetAllMessages()
         {
             return _dic_Messages;

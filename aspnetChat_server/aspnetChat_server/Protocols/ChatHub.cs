@@ -37,15 +37,19 @@ namespace aspnetChat_server.Protocols
         public async Task SendMessage(string param)
         {
             var temp = Protocol.DeserializeParam(param);
-            //var temp = JsonConvert.DeserializeObject<Protocol2.Param>(param);
             if (temp == null)
+            {
+                // 파라미터 에러 전송
+                await Protocol.RelayMessages.SendCaller(Clients, Protocol.FailedParam);
                 return;
-            // 파라미터 1번 있는지 체크
-            if (temp.param1 == null)
+            }
+            // 파라미터 1번 유효성 체크
+            if(!temp.ValidateParamType(1, typeof(ChatMessage)))
+            {
+                // 파라미터 에러 전송
+                await Protocol.RelayMessages.SendCaller(Clients, Protocol.ParamErrorParam);
                 return;
-            // 파라미터 1번이 ChatMessage인지 체크
-            if (temp.param1?.type != typeof(ChatMessage))
-                return;
+            }
             ChatMessage messageStruct = (ChatMessage)temp.param1?.value;
 
             // DB에 메시지 추가
@@ -61,10 +65,14 @@ namespace aspnetChat_server.Protocols
         /// </summary>
         public async Task RequestAllMessages()
         {
+            // 값 가져오기
             Dictionary<string, ChatMessage> messageDic = GetAllMessages();
+            // 파라미터 세팅
             Protocol.Param param = new Protocol.Param()
             {
+                // 성공처리
                 resultCode = RCode.SUCCESS,
+                // 파라미터 1번에 메시지 딕셔너리 넣기
                 param1 = new Protocol.ParamStruct()
                 {
                     type = messageDic.GetType(),
@@ -72,6 +80,7 @@ namespace aspnetChat_server.Protocols
                 }
             };
 
+            // 요청한 클라이언트에게 메시지 딕셔너리 전송
             await Protocol.RequestAllMessages.SendCaller(Clients, param);
         }
     }
