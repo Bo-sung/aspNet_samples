@@ -13,7 +13,11 @@ namespace aspnetChat_server.DB
         private bool m_isInit = false;
         // DBMessage 객체
         private DBMessage _dbMessage = null;
+        // DB private 
+        private DB<ChatMessage_data> _dbChat;
         public DBMessage DBMessage { get => _dbMessage; }
+        // DB public
+        public DB<ChatMessage_data> DBChat { get => _dbChat; }
 
         // 생성자
         private DBManager()
@@ -39,12 +43,18 @@ namespace aspnetChat_server.DB
             }
         }
 
-        public void Init(string _connectionString)
+        public void Init(WebApplicationBuilder builder)
         {
+            string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             if (m_isInit)
                 return;
             m_isInit = true;
             _dbMessage = new DBMessage();
+            // 객체 초기화
+            _dbChat = new DB<ChatMessage_data>(connectionString);
+
+            // 서비스 등록
+            builder.Services.Add(new ServiceDescriptor(_dbChat.GetType(), _dbChat));
         }
     }
 }

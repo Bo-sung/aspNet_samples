@@ -7,12 +7,36 @@
       "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:protocols\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\db\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:db\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\db\\dbmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:db\\dbmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\shared\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:shared\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\db\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:db\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\aspnetchat_server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:aspnetchat_server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\aspnetchat_server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:aspnetchat_server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\shared\\protocol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:protocols\\common\\protocolbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF0C7DCF-EA70-40E2-BD44-EAE78A0549D5}|aspnetChat_server.csproj|d:\\p\\aspnet_sample\\aspnetchat_server\\aspnetchat_server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,24 +62,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DBService.cs",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBService.cs",
+              "RelativeDocumentMoniker": "DB\\DBService.cs",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBService.cs",
+              "RelativeToolTip": "DB\\DBService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T06:56:26.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DBManager.cs",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBManager.cs",
+              "RelativeDocumentMoniker": "DB\\DBManager.cs",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBManager.cs",
+              "RelativeToolTip": "DB\\DBManager.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwDUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T06:48:56.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwFIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:57:22.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Protocols\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Protocols\\ChatHub.cs",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Protocols\\ChatHub.cs",
+              "RelativeToolTip": "Protocols\\ChatHub.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwE4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:59:51.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Chat.cs",
               "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Shared\\Chat.cs",
               "RelativeDocumentMoniker": "Shared\\Chat.cs",
               "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Shared\\Chat.cs",
               "RelativeToolTip": "Shared\\Chat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T05:25:58.917Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "DBMessage.cs",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBMessage.cs",
+              "RelativeDocumentMoniker": "DB\\DBMessage.cs",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBMessage.cs",
+              "RelativeToolTip": "DB\\DBMessage.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA8wC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T10:39:35.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-04T00:28:21.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "aspnetChat_server.http",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\aspnetChat_server.http",
+              "RelativeDocumentMoniker": "aspnetChat_server.http",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\aspnetChat_server.http",
+              "RelativeToolTip": "aspnetChat_server.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-17T07:02:25.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "aspnetChat_server",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\aspnetChat_server.csproj",
+              "RelativeDocumentMoniker": "aspnetChat_server.csproj",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\aspnetChat_server.csproj",
+              "RelativeToolTip": "aspnetChat_server.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-17T07:01:17.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Protocol.cs",
+              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Shared\\Protocol.cs",
+              "RelativeDocumentMoniker": "Shared\\Protocol.cs",
+              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Shared\\Protocol.cs",
+              "RelativeToolTip": "Shared\\Protocol.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAEwIYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:21:35.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ProtocolBase.cs",
               "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Protocols\\Common\\ProtocolBase.cs",
               "RelativeDocumentMoniker": "Protocols\\Common\\ProtocolBase.cs",
@@ -71,12 +200,11 @@
               "RelativeToolTip": "Protocols\\Common\\ProtocolBase.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAMwB4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T05:23:26.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T05:23:26.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WeatherForecast.cs",
@@ -88,71 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBMessage.cs",
-              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBMessage.cs",
-              "RelativeDocumentMoniker": "DB\\DBMessage.cs",
-              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\DB\\DBMessage.cs",
-              "RelativeToolTip": "DB\\DBMessage.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAMwCEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T10:39:35.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Protocol.cs",
-              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Shared\\Protocol.cs",
-              "RelativeDocumentMoniker": "Shared\\Protocol.cs",
-              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Shared\\Protocol.cs",
-              "RelativeToolTip": "Shared\\Protocol.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAEwIYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T13:21:35.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Protocols\\ChatHub.cs",
-              "RelativeDocumentMoniker": "Protocols\\ChatHub.cs",
-              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Protocols\\ChatHub.cs",
-              "RelativeToolTip": "Protocols\\ChatHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T15:59:51.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwD8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T15:57:22.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T00:28:21.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\P\\ASPNET_Sample\\aspnetChat_server\\aspnetChat_server\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",

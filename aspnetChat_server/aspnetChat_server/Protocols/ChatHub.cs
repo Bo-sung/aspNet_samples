@@ -15,12 +15,13 @@ namespace aspnetChat_server.Protocols
         {
             // DB에서 모든 메시지를 가져옴
             var messages = DBManager.Instance.DBMessage.GetAllMessages();
+            var messages2 = DBManager.Instance.DBChat.RequestSelectData("`chatmessage`");
             if (messages == null)
                 return null;
             Dictionary<string, ChatMessage> result = new Dictionary<string, ChatMessage>();
-            foreach (var kvp in messages)
+            foreach (var kvp in messages2.Item2)
             {
-                result.Add(kvp.Key, kvp.Value.message);
+                result.Add(kvp.id.ToString(), new ChatMessage() { user = kvp.user, message = kvp.message });
             }
             // 메시지가 없으면 빈 문자열 반환
             if (result == null)
@@ -44,7 +45,7 @@ namespace aspnetChat_server.Protocols
                 return;
             }
             // 파라미터 1번 유효성 체크
-            if(!temp.ValidateParamType(1, typeof(ChatMessage)))
+            if (!temp.ValidateParamType(1, typeof(ChatMessage)))
             {
                 // 파라미터 에러 전송
                 await Protocol.RelayMessages.SendCaller(Clients, Protocol.ParamErrorParam);

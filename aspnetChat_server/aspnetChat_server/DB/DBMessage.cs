@@ -5,9 +5,8 @@ namespace aspnetChat_server.DB
 {
     using DBDicType = Dictionary<string, DBMessage.Element>;
 
-    public class ChatMessage
+    public class ChatMessage_data
     {
-        public DBChatMessage context;
         public int id { get; set; }
         public string user { get; set; }
         public string message { get; set; }
