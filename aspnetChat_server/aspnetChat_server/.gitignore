@@ -1,0 +1,29 @@
+# Visual Studio generated
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio 2019 cache/options
+.vs/
+
+# Rider
+.idea/
+
+# User-specific files
+*.csproj.user
+
+# Environment files
+appsettings.Development.json
+
+# Log files
+*.log
+
+# Other
+*.vspscc
+*.vssscc
+.DS_Store

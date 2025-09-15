@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\aspnetChat_server.props" />
-</Project>

@@ -1,4 +1,3 @@
-﻿
 using aspnetChat_server.DB;
 using aspnetChat_server.Protocols;
 using System.Configuration;
@@ -10,24 +9,24 @@ namespace aspnetChat_server
         private static WebApplication m_app = null;
 
         /// <summary>
-        /// �� ���� ���α׷��� ����մϴ�.
+        /// 웹 어플리케이션을 빌드합니다.
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
         private static WebApplication BuildWebApp(string[] args)
         {
-            // �� ���� ���α׷��� ����մϴ�.
+            // 웹 어플리케이션을 빌드합니다.
             var builder = WebApplication.CreateBuilder(args);
 
-            // �����̳ʿ� ���񽺸� �߰��մϴ�.
+            // 컨테이너에 서비스를 추가합니다.
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            // API ���� ������ �߰�
+            // API 탐색기 추가
             builder.Services.AddEndpointsApiExplorer();
-            // Swagger UI �߰�
-            // Swagger UI : Restful API�� �׽�Ʈ�ϰ� ����ȭ�ϴ� ���¼ҽ� �����ӿ�ũ
+            // Swagger UI 추가
+            // Swagger UI : Restful API를 테스트하고 문서화하는 그래픽 사용자 인터페이스
             builder.Services.AddSwaggerGen();
-            // SignalR �߰�
+            // SignalR 추가
             builder.Services.AddSignalR();
 
             InitDB(builder);
@@ -37,22 +36,22 @@ namespace aspnetChat_server
 
         private static void InitDB(WebApplicationBuilder builder)
         {
-            // Ŀ�ؼ� ��Ʈ�� �ҷ�����
+            // 커넥션 스트링을 가져옵니다.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-            // MYSQL ���� �߰�
+            // MYSQL 연결 추가
             DBManager.Instance.Init(builder);
         }
 
         public static void Main(string[] args)
         {
-            // ��� ����
+            // 앱 빌드
             m_app = BuildWebApp(args);
             if (m_app == null)
             {
                 return;
             }
 
-            // HTTP ��û ���������� ����
+            // HTTP 요청 파이프라인을 구성합니다.
             if (m_app.Environment.IsDevelopment())
             {
                 m_app.UseSwagger();
@@ -60,26 +59,26 @@ namespace aspnetChat_server
                 m_app.UseDeveloperExceptionPage();
             }
 
-            // HTTP ��û ���������� ����
+            // HTTP 요청 파이프라인을 구성합니다.
             m_app.UseHttpsRedirection();
 
-            // ���� �� ���� �ο�
+            // 인증 및 권한 부여
             m_app.UseAuthorization();
 
-            // ��Ʈ�ѷ� ����
+            // 컨트롤러를 매핑합니다.
             m_app.MapControllers();
 
-            // SignalR �����  
+            // SignalR 라우팅
             m_app.UseRouting();
 
-            // SignalR ��������Ʈ ����
+            // SignalR 엔드포인트를 매핑합니다.
             m_app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<ChatHub>(ChatHub.URL_HEADER);
             });
 
-            // �� ���� ���α׷� ����
+            // 앱을 실행합니다.
             m_app.Run();
         }
     }
