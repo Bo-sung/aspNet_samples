@@ -1,4 +1,4 @@
-
+ï»¿
 using aspnetChat_server.DB;
 using aspnetChat_server.Protocols;
 using System.Configuration;
@@ -10,24 +10,24 @@ namespace aspnetChat_server
         private static WebApplication m_app = null;
 
         /// <summary>
-        /// À¥ ÀÀ¿ë ÇÁ·Î±×·¥À» ºôµåÇÕ´Ï´Ù.
+        /// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
         /// </summary>
         /// <param name="args"></param>
         /// <returns></returns>
         private static WebApplication BuildWebApp(string[] args)
         {
-            // À¥ ÀÀ¿ë ÇÁ·Î±×·¥À» ºôµåÇÕ´Ï´Ù.
+            // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
             var builder = WebApplication.CreateBuilder(args);
 
-            // ÄÁÅ×ÀÌ³Ê¿¡ ¼­ºñ½º¸¦ Ãß°¡ÇÕ´Ï´Ù.
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ì³Ê¿ï¿½ ï¿½ï¿½ï¿½ñ½º¸ï¿½ ï¿½ß°ï¿½ï¿½Õ´Ï´ï¿½.
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            // API ¹®¼­ »ý¼º±â Ãß°¡
+            // API ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
             builder.Services.AddEndpointsApiExplorer();
-            // Swagger UI Ãß°¡
-            // Swagger UI : Restful API¸¦ Å×½ºÆ®ÇÏ°í ¹®¼­È­ÇÏ´Â ¿ÀÇÂ¼Ò½º ÇÁ·¹ÀÓ¿öÅ©
+            // Swagger UI ï¿½ß°ï¿½
+            // Swagger UI : Restful APIï¿½ï¿½ ï¿½×½ï¿½Æ®ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Â¼Ò½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿ï¿½Å©
             builder.Services.AddSwaggerGen();
-            // SignalR Ãß°¡
+            // SignalR ï¿½ß°ï¿½
             builder.Services.AddSignalR();
 
             InitDB(builder);
@@ -37,22 +37,22 @@ namespace aspnetChat_server
 
         private static void InitDB(WebApplicationBuilder builder)
         {
-            // Ä¿³Ø¼Ç ½ºÆ®¸µ ºÒ·¯¿À±â
+            // Ä¿ï¿½Ø¼ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-            // MYSQL ¼­ºñ½º Ãß°¡
+            // MYSQL ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
             DBManager.Instance.Init(builder);
         }
 
         public static void Main(string[] args)
         {
-            // ºôµå ½ÃÀÛ
+            // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             m_app = BuildWebApp(args);
             if (m_app == null)
             {
                 return;
             }
 
-            // HTTP ¿äÃ» ÆÄÀÌÇÁ¶óÀÎ ±¸¼º
+            // HTTP ï¿½ï¿½Ã» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             if (m_app.Environment.IsDevelopment())
             {
                 m_app.UseSwagger();
@@ -60,26 +60,26 @@ namespace aspnetChat_server
                 m_app.UseDeveloperExceptionPage();
             }
 
-            // HTTP ¿äÃ» ÆÄÀÌÇÁ¶óÀÎ ±¸¼º
+            // HTTP ï¿½ï¿½Ã» ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             m_app.UseHttpsRedirection();
 
-            // ÀÎÁõ ¹× ±ÇÇÑ ºÎ¿©
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Î¿ï¿½
             m_app.UseAuthorization();
 
-            // ÄÁÆ®·Ñ·¯ ¸ÅÇÎ
+            // ï¿½ï¿½Æ®ï¿½Ñ·ï¿½ ï¿½ï¿½ï¿½ï¿½
             m_app.MapControllers();
 
-            // SignalR ¶ó¿ìÆÃ  
+            // SignalR ï¿½ï¿½ï¿½ï¿½ï¿½  
             m_app.UseRouting();
 
-            // SignalR ¿£µåÆ÷ÀÎÆ® ¸ÅÇÎ
+            // SignalR ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
             m_app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<ChatHub>(ChatHub.URL_HEADER);
             });
 
-            // À¥ ÀÀ¿ë ÇÁ·Î±×·¥ ½ÇÇà
+            // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½
             m_app.Run();
         }
     }
